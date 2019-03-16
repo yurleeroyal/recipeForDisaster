@@ -16,7 +16,7 @@ var express               = require("express"),
     indexRoute            = require("./routes/index");
     
 //ORDER MATTERS!!!!!!
-mongoose.connect("mongodb://localhost/recipefordisater", { useNewUrlParser: true });
+mongoose.connect("mongodb://localhost/recipefordisaster", { useNewUrlParser: true });
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
